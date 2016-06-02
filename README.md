@@ -18,6 +18,18 @@ Normally it's `npm install`.  An IRC / ICU library libconv can cause errors.
 For me it worked with them but some investigation would be useful.
 
 
+### Configuration
+
+Configuration can be set either in `config.json` (read from the directory where you run hubot), or via environment variables, with file based config taking precedence.
+
+| `config.json` | environment variable | description |
+| ----------- | -------------------- | ----------- |
+| `bot_name` | `HUBOT_BOT_NAME` | Name of gitter bot, messages from this bot will not be forwarded |
+| `gitter_room_uri` | `HUBOT_GITTER_ROOM` | Gitter room to forward from/to |
+| `irc_channel` | `HUBOT_IRC_CHANNEL` |  IRC channel to forward from/to |
+| `muted_users` | `HUBOT_MUTED_USERS` | Users which will not be forwarded, JSON array in `config.json` or a comma seperated list when using envvars, defaults to `ASFBot` |
+| `irc_host` | `HUBOT_IRC_HOST` | IRC Host, defaults to `irc.freenode.net` |
+
 ### Running Locally
 
 You can test your hubot by running the following, however some plugins will not

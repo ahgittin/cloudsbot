@@ -1,0 +1,9 @@
+{
+  "bot_name": "brooklyn-bot",
+  "gitter_room_uri": "brooklyncentral/brooklyn",
+  "irc_channel": "#brooklyncentral",
+  "muted_users": [
+    "ASFBot"
+  ],
+  "irc_host": "irc.freenode.net"
+}
